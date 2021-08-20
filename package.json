@@ -1,0 +1,40 @@
+{
+  "name": "proyecto-backend-gdgs1092",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -w",
+    "dev": "nodemon build/index.js",
+    "server": "concurrently --kill-others \"npm run build\" \"npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luischo04/proyecto-backend-GDGS1092.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luischo04/proyecto-backend-GDGS1092/issues"
+  },
+  "homepage": "https://github.com/luischo04/proyecto-backend-GDGS1092#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "promise-mysql": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.4",
+    "@types/morgan": "^1.9.2",
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
